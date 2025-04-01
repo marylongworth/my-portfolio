@@ -42,12 +42,12 @@ const menuList = [
       },
     ],
   },
-  {
-    id: 5,
-    path: "/",
-    section: "#testimonial",
-    name: "Testimonial",
-  },
+  //{
+   // id: 5,
+   // path: "/",
+   // section: "#testimonial",
+   // name: "Testimonial",
+  //},
   {
     id: 6,
     path: "/",

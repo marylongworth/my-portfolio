@@ -60,7 +60,7 @@ const Banner = () => {
             <div className="banner__content">
               <Link to={""} className="bn__currently">
                 <span className="d-block">
-                  Currently available for freelance
+                  Currently Helping Startup Founders
                 </span>
                 <span className="d-flex gap-4 align-items-center">
                   worldwide
@@ -68,7 +68,7 @@ const Banner = () => {
                 </span>
               </Link>
               <h1>
-                <span className="hone"> Creative Visual</span>
+                <span className="hone"> Developer &</span>
                 <span className="d-block designers" data-text="Designer">
                   Designer
                 </span>
@@ -98,10 +98,12 @@ const Banner = () => {
       </div>
       <div className="banner__leftinfo">
         <div className="left__infomobile">
+          <div>hi@marylongworth.com</div>
+           {/* 
           <Link to={""}>
             <img src={dial} alt="img" />
           </Link>
-          <Link to={""}>(+02)-574-328-301</Link>
+          <Link to={""}>(+02)-574-328-301</Link> */} 
         </div>
         <div className="right__infoscroll">
           <Link className="scroll">

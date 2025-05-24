@@ -56,7 +56,7 @@ const About = () => {
               data-aos-duration="1000"
             />
             <p className="descrp" data-aos="fade-up" data-aos-duration="1500">
-              I'm Mary, I'm a creative designer with experience from startups to multinationals.
+              I'm Mary, I'm a creative developer & designer with experience working with startups to multinational companies.
             </p>
           </div>
           <div className="singletab">

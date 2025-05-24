@@ -8,6 +8,12 @@ import AllBlogs from "../Pages/AllBlogs/AllBlogs";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 import Portfolio from "../Pages/Portfolio/Portfolio";
 import PortfolioDetails from "../Pages/PortfolioDetails/PortfolioDetails";
+// portfolio pages
+import GlugoDetails from "../Pages/PortfolioDetails/GlugoDetails";
+import GfggDetails from "../Pages/PortfolioDetails/GfggDetails";
+import TpDetails from "../Pages/PortfolioDetails/TpDetails";
+import PprDetails from "../Pages/PortfolioDetails/PprDetails";
+import DandWDetails from "../Pages/PortfolioDetails/DandWDetails";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +51,26 @@ export const router = createBrowserRouter([
       {
         path: "/portfolio-details",
         element: <PortfolioDetails />,
+      },
+      {
+        path: "/glugo-details",
+        element: <GlugoDetails />,
+      },
+      {
+        path: "/gfgg-details",
+        element: <GfggDetails />,
+      },
+      {
+        path: "/ppr-details",
+        element: <PprDetails />,
+      },
+      {
+        path: "/tp-details",
+        element: <TpDetails />,
+      },
+      {
+        path: "/dandw-details",
+        element: <DandWDetails />,
       },
     ],
   },

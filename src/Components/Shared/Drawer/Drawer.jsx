@@ -20,29 +20,26 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <img src={logo} alt="img" />
         </Link>
         <p>
-          Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-          consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam,
-          exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam
-          nihil
+          I'm Irish and living in Tenerife, working on cool projects worldwide.
         </p>
         <div className="sub__contact-left d-grid">
           <div className="sub__contac-item">
-            <div className="content">
+            {/* <div className="content">
               <span className="address d-block"> address </span>
               <span className="textp"> Victoria Street London, </span>
-            </div>
+            </div> */}
           </div>
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> email </span>
-              <Link className="textp"> marylongworth100@gmail.com </Link>
+              <Link className="textp"> hi@marylongworth.com </Link>
             </div>
           </div>
           <div className="sub__contac-item">
-            <div className="content">
+            {/* <div className="content">
               <span className="address d-block"> call now </span>
               <Link className="textp"> +98 4758 2154 021 </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="sub__contact-right mb-80 position-relative">
@@ -56,7 +53,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
             ))}
           </ul>
         </div>
-        <Link
+       {/*  <Link
           to={""}
           className="d-flex justify-content-center fw-500 cmn--btn align-items-center gap-2"
         >
@@ -65,8 +62,8 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
               <ChevronRight />
             </i>
           </span>
-          <span className="get__text"> Let's Talk </span>
-        </Link>
+          <span className="get__text"> Let's Chat </span>
+        </Link> */}
       </div>
     </div>
   );

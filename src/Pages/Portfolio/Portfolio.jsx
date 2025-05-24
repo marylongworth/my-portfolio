@@ -15,23 +15,23 @@ const categoryList = [
   },
   {
     id: 2,
-    categoryName: "Branding-app",
-    value: "branding_app",
+    categoryName: "Branding",
+    value: "branding_design",
   },
   {
     id: 3,
-    categoryName: "Los-App",
-    value: "los_app",
+    categoryName: "App Design",
+    value: "app_design",
   },
   {
     id: 4,
-    categoryName: "Landing Page",
-    value: "landing_page",
+    categoryName: "Ecommerce",
+    value: "ecommerce",
   },
   {
     id: 5,
-    categoryName: "Website",
-    value: "website",
+    categoryName: "Web Design",
+    value: "website_design",
   },
 ];
 const Portfolio = () => {

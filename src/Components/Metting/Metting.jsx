@@ -21,7 +21,7 @@ const Metting = () => {
                   data-aos="fade-down"
                   data-aos-duration="1600"
                 >
-                  Let's work together. fixed a meeting
+                  Let's work together. 
                 </h2>
               </div>
               <div
@@ -34,7 +34,7 @@ const Metting = () => {
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Email </span>
-                  <a href="#0"> marylongworth100@gmail.com </a>
+                  <a href="mailto:marylongworth100@gmail.com"> marylongworth100@gmail.com </a>
                 </span>
               </div>
               <div
@@ -47,7 +47,7 @@ const Metting = () => {
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Location </span>
-                  <a href="#0"> Victoria Street London, England </a>
+                  <a href="#0"> Galway, Ireland </a>
                 </span>
               </div>
             </div>

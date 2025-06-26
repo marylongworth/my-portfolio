@@ -5,32 +5,32 @@ import WorkProcessCard from "./WorkProcessCard";
 const processList = [
   {
     id: 1,
-    title: "Concept",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Design",
+    info: "I've been designing since 2012, love creating logos, posters, products",
     list: [
-      "Reviewing any existing branding",
-      "Target audience and competitors research",
-      "Developing a strategy",
+      "Illustrator is go to for graphics",
+      "Recently started designing fun stuff in Procreate",
+      "Figma has been my new favourite thing since 2022",
     ],
   },
   {
     id: 2,
-    title: "Design",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Develop",
+    info: "Since I did the web design course in 2011, I was hooked from day one",
     list: [
-      "Developing wireframes and mockup",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "Most of my experience in with Shopify sites",
+      "Built a React web app called GluGo for finding Gluten Free restaurants",
+      "Experience with Wordpress",
     ],
   },
   {
     id: 3,
-    title: "Webflow",
-    info: "Nemo enim ipsam voluptatem voluptas sit aspernatur aut odit aut fugit",
+    title: "Manage",
+    info: "Managing projects from start to finish.",
     list: [
-      "Testing the website thoroughly launch",
-      "Choosing typography, color palettes,",
-      "Refining the design",
+      "People managment in Shopify",
+      "Project managing in startups",
+      "Time management and organisation",
     ],
   },
 ];
@@ -39,8 +39,8 @@ const WorkeProcess = () => {
     <section className="process__section pt-120 pb-120">
       <div className="container">
         <Title
-          mainTitle="Your Dream Website In Just Few Steps"
-          sortTitle="Working Process"
+          mainTitle="What can I do?"
+          sortTitle="My Top Skills"
         />
         <div className="row g-4">
           {processList.map(({ id, info, list, title }) => (

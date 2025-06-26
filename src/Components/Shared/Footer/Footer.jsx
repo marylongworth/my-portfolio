@@ -5,28 +5,32 @@ import { Link } from "react-router-dom";
 const socalList = [
   {
     id: 1,
-    platfrom: "Facebook",
+    platfrom: "Linkedin",
     icon: <ArrowRight />,
+    link: "https://www.linkedin.com/in/marylongworth/",
   },
   {
     id: 2,
     platfrom: "Instagram",
     icon: <ArrowRight />,
+    link: "https://www.instagram.com/glutenfreegalwaygirl/",
   },
-  {
+  /* {
     id: 3,
     platfrom: "Dribble",
     icon: <ArrowRight />,
+    link: "https://dribbble.com/yourusername",
   },
   {
     id: 4,
     platfrom: "Webflow",
     icon: <ArrowRight />,
-  },
+    link: "https://yourwebflowdomain.webflow.io",
+  }, */
 ];
 const Footer = () => {
   return (
-    <footer className="footer__section">
+    <footer id="footer" className="footer__section">
       <div className="container">
         <div className="footer__top pt-120 pb-120">
           <div className="fl" data-aos="fade-up" data-aos-duration="1000">
@@ -39,22 +43,23 @@ const Footer = () => {
                   Hello, I’m Mary, Website & UX Designer
                   based in Ireland.
                 </p>
-                <a href="#0">marylongworth100@gmail.com</a>
+                <a href="mailto:marylongworth100@gmail.com">marylongworth100@gmail.com</a>
               </div>
             </div>
             <div className="col-lg-6">
               <div className="get__rightcontetn">
                 <div className="row g-4">
-                  {socalList.map(({ id, icon, platfrom }) => {
+                  {socalList.map(({ id, icon, platfrom, link }) => {
                     return (
                       <div key={id} className="col-lg-6 col-md-6 col-sm-6">
-                        <a href="#0" className="social__footer">
+                        <a href={link} className="social__footer" target="_blank" rel="noopener noreferrer">
                           {platfrom}
                           <i>{icon}</i>
                         </a>
                       </div>
                     );
                   })}
+
                 </div>
               </div>
             </div>

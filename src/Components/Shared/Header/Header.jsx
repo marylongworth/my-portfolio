@@ -24,7 +24,7 @@ const menuList = [
     section: "#projects",
     name: "Work",
   },
-  {
+  /* {
     id: 4,
     path: "/",
     section: "#services",
@@ -41,14 +41,14 @@ const menuList = [
         name: "Service Details",
       },
     ],
-  },
+  }, */
   //{
    // id: 5,
    // path: "/",
    // section: "#testimonial",
    // name: "Testimonial",
   //},
-  {
+ /*  {
     id: 6,
     path: "/",
     section: "#blog",
@@ -65,10 +65,11 @@ const menuList = [
         name: "Blog Details",
       },
     ],
-  },
+  }, */
   {
     id: 7,
-    path: "/contact",
+    path: "/",
+    section: "#footer",
     name: "Contact",
   },
 ];
@@ -137,7 +138,7 @@ const Header = () => {
           </ul>
           <div className="menu__components d-flex align-items-center">
             <Link
-              to="/contact"
+              to="/#footer"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"
             >
               <span className="get__text">Let's Talk</span>

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 import { imagesList, projectList } from "../../Utlits/projectList";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
-import detailbg from "../../assets/img/portfolio/port-detailsbig.png";
-import detailbg1 from "../../assets/img/portfolio/port-detials2.png";
-import detailbg2 from "../../assets/img/portfolio/port-detials2.png";
+import detailbg from "../../assets/img/portfolio/port-detailsbig-glugo.png";
+import detailbg1 from "../../assets/img/portfolio/glugo1.png";
+import detailbg2 from "../../assets/img/portfolio/glugo2.png";
 import ProjectCard from "../../Components/Shared/ProjectCard/ProjectCard";
 import Lightbox from "../../Components/Shared/LightBox/LightBox";
 import { socialIcons } from "../../Utlits/socilIcons";
@@ -39,27 +39,54 @@ const GlugoDetails = () => {
             <img src={detailbg} alt="img" />
             <div className="port__detail__contact">
               <h3>Project Info</h3>
-              <div className="port__itembox">
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Clients</h5>
-                    <p>Personal Project</p>
+              <div
+                className="port__itembox"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                  gap: "2rem",
+                }}
+              >
+                {[
+                  {
+                    title: "Client",
+                    content: "Personal Project",
+                  },
+                  {
+                    title: "Date",
+                    content: "Jun 2022 - Aug 2024",
+                  },
+                  {
+                    title: "Category",
+                    content: "Web App UX & UI Design & Project Management",
+                  },
+                  {
+                    title: "Website",
+                    content: (
+                      <a
+                        href="https://glugo.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#FFA4FF", textTransform: "lowercase" }} 
+                      >
+                        glugo.app
+                      </a>
+                    ),
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      backgroundColor: "#373737",
+                      borderRadius: "12px",
+                      padding: "1.5rem",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+                    }}
+                  >
+                    <h5 style={{ marginBottom: "0.5rem" }}>{item.title}</h5>
+                    <p style={{ margin: 0, wordBreak: "break-word" }}>{item.content}</p>
                   </div>
-                  <div className="items">
-                    <h5>Date</h5>
-                    <p>August, 2022 - August 2024</p>
-                  </div>
-                </div>
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Category</h5>
-                    <p>App Design</p>
-                  </div>
-                  <div className="items">
-                    <h5>Location</h5>
-                    <p>Ireland</p>
-                  </div>
-                </div>
+                ))}
               </div>
               <ul className="social d-flex gap-3">
                 {socialIcons.map(({ icon, id }) => (
@@ -233,7 +260,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
           <div className=" project__wrapone">
             {projectList
               .slice(0, 2)
-              .map(({ heading, id, image, subHeading }, index) => (
+              .map(({ heading, id, image, subHeading, slug }, index) => (
                 <ProjectCard
                   key={id}
                   image={image}
@@ -241,6 +268,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
                   subHeading={subHeading}
                   openLightbox={openLightbox}
                   index={index}
+                   slug={slug} 
                 />
               ))}
           </div>

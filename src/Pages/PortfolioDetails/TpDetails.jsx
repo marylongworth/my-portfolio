@@ -39,28 +39,56 @@ const TpDetails = () => {
             <img src={detailbg} alt="img" />
             <div className="port__detail__contact">
               <h3>Project Info</h3>
-              <div className="port__itembox">
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Clients</h5>
-                    <p>Conall Horgan</p>
+               <div
+                className="port__itembox"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                  gap: "2rem",
+                }}
+              >
+                {[
+                  {
+                    title: "Client",
+                    content: "Conall Horgan",
+                  },
+                  {
+                    title: "Date",
+                    content: "Aug, 2023",
+                  },
+                  {
+                    title: "Category",
+                    content: "Website Design",
+                  },
+                  {
+                    title: "Website",
+                    content: (
+                      <a
+                        href="https://talentprospecting.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#FFA4FF", textTransform: "lowercase" }} 
+                      >
+                        talentprospecting.com
+                      </a>
+                    ),
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      backgroundColor: "#373737",
+                      borderRadius: "12px",
+                      padding: "1.5rem",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+                    }}
+                  >
+                    <h5 style={{ marginBottom: "0.5rem" }}>{item.title}</h5>
+                    <p style={{ margin: 0, wordBreak: "break-word" }}>{item.content}</p>
                   </div>
-                  <div className="items">
-                    <h5>Date</h5>
-                    <p>Aug, 2023</p>
-                  </div>
-                </div>
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Category</h5>
-                    <p>Website Design</p>
-                  </div>
-                  <div className="items">
-                    <h5>Location</h5>
-                    <p>Galway, Ireland</p>
-                  </div>
-                </div>
+                ))}
               </div>
+
               <ul className="social d-flex gap-3">
                 {socialIcons.map(({ icon, id }) => (
                   <li key={id}>
@@ -160,7 +188,7 @@ const TpDetails = () => {
           <div className=" project__wrapone">
             {projectList
               .slice(0, 2)
-              .map(({ heading, id, image, subHeading }, index) => (
+              .map(({ heading, id, image, subHeading, slug }, index) => (
                 <ProjectCard
                   key={id}
                   image={image}
@@ -168,6 +196,7 @@ const TpDetails = () => {
                   subHeading={subHeading}
                   openLightbox={openLightbox}
                   index={index}
+                   slug={slug} 
                 />
               ))}
           </div>

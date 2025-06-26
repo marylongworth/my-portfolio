@@ -83,19 +83,20 @@ const Portfolio = () => {
               ))}
             </ul>
             <div className="tabcontents project__wrapone">
-              {filterProject.map(
-                ({ heading, id, image, subHeading }, index) => (
-                  <ProjectCard
-                    key={id}
-                    image={image}
-                    heading={heading}
-                    subHeading={subHeading}
-                    openLightbox={openLightbox}
-                    index={index}
-                    navigate="/portfolio-details"
-                  />
-                )
-              )}
+           {filterProject.map(
+            ({ heading, id, image, subHeading, slug }, index) => (
+              <ProjectCard
+                key={id}
+                image={image}
+                heading={heading}
+                subHeading={subHeading}
+                openLightbox={openLightbox}
+                index={index}
+                slug={slug}
+              />
+            )
+          )}
+
             </div>
           </div>
         </div>

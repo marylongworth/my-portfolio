@@ -188,7 +188,7 @@ const PortfolioDetails = () => {
           <div className=" project__wrapone">
             {projectList
               .slice(0, 2)
-              .map(({ heading, id, image, subHeading }, index) => (
+              .map(({ heading, id, image, subHeading, slug }, index) => (
                 <ProjectCard
                   key={id}
                   image={image}
@@ -196,6 +196,7 @@ const PortfolioDetails = () => {
                   subHeading={subHeading}
                   openLightbox={openLightbox}
                   index={index}
+                   slug={slug} 
                 />
               ))}
           </div>

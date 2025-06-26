@@ -45,10 +45,7 @@ const Skills = ({ isTabActive }) => {
             <div className="about__onecontent">
               <h2>My Skills</h2>
               <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                React • HTML • CSS • Liquid • JavaScript • Figma • Wordpress • Digital Marketing • Adobe Illustrator • Photoshop • Premier Pro • InDesign • Social Media Marketing • Project Management • ChatGPT • SEO • Swagger.io
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">

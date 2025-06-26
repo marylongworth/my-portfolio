@@ -19,12 +19,12 @@ const Projects = () => {
     <section className="project__section pt-120 pb-120" id="projects">
       <div className="container">
         <Title
-          mainTitle={"Look at my portfolio and give me your feedback"}
+          mainTitle={"Check out my portfolio"}
           sortTitle={"Complete Project"}
         />
 
         <div className={`project__wrapone`}>
-          {projectList.map(({ heading, id, image, subHeading }, index) => (
+          {projectList.map(({ heading, id, image, subHeading, slug }, index) => (
             <ProjectCard
               key={id}
               image={image}
@@ -33,6 +33,7 @@ const Projects = () => {
               openLightbox={openLightbox}
               index={index}
               navigate="/portfolio"
+               slug={slug} 
             />
           ))}
         </div>

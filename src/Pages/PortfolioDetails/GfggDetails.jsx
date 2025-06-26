@@ -39,6 +39,56 @@ const GfggDetails = () => {
             <img src={detailbg} alt="img" />
             <div className="port__detail__contact">
               <h3>Project Info</h3>
+               <div
+                className="port__itembox"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
+                  gap: "2rem",
+                }}
+              >
+                {[
+                  {
+                    title: "Client",
+                    content: "Personal Project",
+                  },
+                  {
+                    title: "Date",
+                    content: "May 2020 - Present",
+                  },
+                  {
+                    title: "Category",
+                    content: "Web & Product Design & Social Media Marketing",
+                  },
+                  {
+                    title: "Website",
+                    content: (
+                      <a
+                        href="https://glutenfreegalwaygirl.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ color: "#FFA4FF", textTransform: "lowercase" }} 
+                      >
+                        glutenfreegalwaygirl.com
+                      </a>
+                    ),
+                  },
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    style={{
+                      backgroundColor: "#373737",
+                      borderRadius: "12px",
+                      padding: "1.5rem",
+                      boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
+                    }}
+                  >
+                    <h5 style={{ marginBottom: "0.5rem" }}>{item.title}</h5>
+                    <p style={{ margin: 0, wordBreak: "break-word" }}>{item.content}</p>
+                  </div>
+                ))}
+              </div>
+
               <div className="port__itembox">
                 <div className="port__left">
                   <div className="items mb__cus30">
@@ -61,6 +111,7 @@ const GfggDetails = () => {
                   </div>
                 </div>
               </div>
+
               <ul className="social d-flex gap-3">
                 {socialIcons.map(({ icon, id }) => (
                   <li key={id}>
@@ -183,7 +234,7 @@ const GfggDetails = () => {
           <div className=" project__wrapone">
             {projectList
               .slice(0, 2)
-              .map(({ heading, id, image, subHeading }, index) => (
+              .map(({ heading, id, image, subHeading, slug }, index) => (
                 <ProjectCard
                   key={id}
                   image={image}
@@ -191,6 +242,7 @@ const GfggDetails = () => {
                   subHeading={subHeading}
                   openLightbox={openLightbox}
                   index={index}
+                   slug={slug} 
                 />
               ))}
           </div>

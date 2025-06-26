@@ -18,26 +18,18 @@ import VideoPlay from "../Shared/VideoPlay/VideoPlay";
 
 const socalIcon = [
   {
-    id: 1,
-    icon: <Facebook />,
-  },
-  {
-    id: 2,
-    icon: <Twitter />,
-  },
-  {
     id: 3,
     icon: <Linkedin />,
-  },
-  {
-    id: 4,
-    icon: <Globe />,
+    link: "https://www.linkedin.com/in/marylongworth/",
   },
   {
     id: 5,
     icon: <Instagram />,
+    link: "https://www.instagram.com/glutenfreegalwaygirl/",
   },
 ];
+
+
 const Banner = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [position, setPosition] = useState(false);
@@ -60,7 +52,7 @@ const Banner = () => {
             <div className="banner__content">
               <Link to={""} className="bn__currently">
                 <span className="d-block">
-                  Currently Helping Startup Founders
+                  Currently looking for exciting new projects and opportunities to work on.
                 </span>
                 <span className="d-flex gap-4 align-items-center">
                   worldwide
@@ -98,7 +90,7 @@ const Banner = () => {
       </div>
       <div className="banner__leftinfo">
         <div className="left__infomobile">
-          <div>hi@marylongworth.com</div>
+          <div>marylongworth100@gmail.com</div>
            {/* 
           <Link to={""}>
             <img src={dial} alt="img" />
@@ -124,17 +116,16 @@ const Banner = () => {
           </Link>
         </div>
         <div className="banner__xlsocial">
-          <ul className="banner__soci d-grid justify-content-center">
-            {socalIcon.map(({ icon, id }) => {
-              return (
-                <li key={id}>
-                  <Link to={""} >
-                    <i>{icon}</i>
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
+        <ul className="banner__soci d-grid justify-content-center">
+          {socalIcon.map(({ icon, id, link }) => (
+            <li key={id}>
+              <a href={link} target="_blank" rel="noopener noreferrer">
+                <i>{icon}</i>
+              </a>
+            </li>
+          ))}
+        </ul>
+
         </div>
       </div>
       {lightboxOpen && (

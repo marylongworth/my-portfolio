@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 import { imagesList, projectList } from "../../Utlits/projectList";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
-import detailbg from "../../assets/img/portfolio/port-detailsbig-ppr.png";
+import detailbg from "../../assets/img/portfolio/port-detailsbig-retreats.png";
 import detailbg1 from "../../assets/img/portfolio/ppr1.png";
 import detailbg2 from "../../assets/img/portfolio/ppr2.png";
 import ProjectCard from "../../Components/Shared/ProjectCard/ProjectCard";
 import Lightbox from "../../Components/Shared/LightBox/LightBox";
 import { socialIcons } from "../../Utlits/socilIcons";
 
-const PprDetails = () => {
+const GfretreatsDetails = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentId, setCurrentId] = useState(0);
 
@@ -26,8 +26,8 @@ const PprDetails = () => {
     <>
 
       <PageHeader
-        heading={"Positive Peer Recognition"}
-        page="Positive Peer Recognition"
+        heading={"Gluten Free Retreats"}
+        page="Gluten Free Retreats"
       />
       <section className="portfolio__details pb-120">
         <div className="container">
@@ -50,26 +50,26 @@ const PprDetails = () => {
                 {[
                   {
                     title: "Client",
-                    content: "Talent Prospecting",
+                    content: "Personal Project",
                   },
                   {
                     title: "Date",
-                    content: "August, 2024",
+                    content: "June 2025",
                   },
                   {
                     title: "Category",
-                    content: "Web App UX & UI Design & Project Management",
+                    content: "Website Design & Branding",
                   },
                   {
                     title: "Website",
                     content: (
                       <a
-                        href="https://positivepeerrecognition.com"
+                        href="https://glutenfreeretreats.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{ color: "#FFA4FF", textTransform: "lowercase" }} 
                       >
-                        positivepeerrecognition.com
+                        glutenfreeretreats.com
                       </a>
                     ),
                   },
@@ -107,8 +107,11 @@ const PprDetails = () => {
             >
               <h3 className="text__boxhead">Brief</h3>
               <p className="fz-16 pra ttext__one">
-              Design and launch a digital platform that enables employees to recognize and celebrate each other’s contributions in a positive, public, and structured way. 
-              The goal was to foster a culture of appreciation and boost morale within teams by making peer recognition easy, engaging, and consistent.
+              Gluten Free Retreats is a personal passion project aimed at creating a safe and rejuvenating travel experience for 
+              individuals with gluten sensitivities. The goal was to design a website that not only introduced the concept of 
+              gluten-free wellness retreats but also began building a community of like-minded travelers. I took on the 
+              full scope of the project—from branding and visual identity to website design and functional development 
+              on the Shopify platform.
               </p>
             </div>
             <div
@@ -118,18 +121,14 @@ const PprDetails = () => {
             >
               <h3 className="text__boxhead">Challenge</h3>
               <p className="fz-16 pra ttext__one">
-                Challenge is that HR tools out there take time and are not easy to use.
-                360 reviews can takes days or weeks. This tool should be simple and quick to log into and use.
+                The biggest challenge was creating a compelling online presence for a completely new concept with no direct 
+                competitors to benchmark against. Since the retreats were still in the idea phase, 
+                it was critical to design a website that could both inspire confidence and generate early interest without 
+                traditional e-commerce transactions. Additionally, adapting Shopify—a platform primarily built for product 
+                sales—to effectively present and validate a service-based offering required inventive customization, 
+                especially to track user interest and gather actionable feedback through waitlist forms.
               
               </p>
-              <ul className="challenge__list">
-                <li>
-                  The goal is for the user to take as little as 10 mintues to complete a survey.
-                </li>
-                <li>
-                  Easy for management to set up the teams
-                </li>
-              </ul>
             </div>
             <div
               className="text__box mb__cus60"
@@ -138,12 +137,14 @@ const PprDetails = () => {
             >
               <h3 className="text__boxhead">Solution & Result</h3>
               <p className="fz-16 pra">
-              User-Centered Design Approach: Created low- to high-fidelity wireframes and interactive prototypes. 
-              Prioritized ease of use with a simple, mobile-friendly interface.
-              Designed microinteractions and subtle animations to make the experience feel rewarding.
+              To address these challenges, I designed a clean, welcoming site that reflects the relaxing and health-focused ethos 
+              of the retreats. I developed a full branding system to create trust and recognition from the outset. On the technical 
+              side, I customized the Shopify layout to showcase retreat "rooms" as individual listings, and implemented waitlist 
+              forms on each page. These forms allowed visitors to express interest, helping to gather data and measure 
+              demand before launching full bookings.
               </p>
             </div>
-            <div
+         {/*    <div
               className="details__small"
               data-aos="fade-up"
               data-aos-duration="2000"
@@ -154,7 +155,8 @@ const PprDetails = () => {
               <div className="thumb">
                 <img src={detailbg2} alt="img" />
               </div>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </section>
@@ -202,4 +204,4 @@ const PprDetails = () => {
   );
 };
 
-export default PprDetails;
+export default GfretreatsDetails;

@@ -19,28 +19,22 @@ const contactInfo = [
     system: "Email",
     contact: "MaryLongworth100@Gmail.Com",
   },
-  {
-    id: 2,
-    system: "Phone",
-    contact: "",
-  },
-  {
-    id: 3,
-    system: "Phone",
-    contact: "",
-  },
-  {
-    id: 4,
-    system: "Follow",
-    socalContact: [
-      <Facebook />,
-      <Twitter />,
-      <Linkedin />,
-      <Globe />,
-      <Instagram />,
-    ],
-  },
+  // {
+  //   id: 4,
+  //   system: "Follow",
+  //   socalContact: [
+  //     {
+  //       icon: <Linkedin />,
+  //       url: "https://www.linkedin.com/in/marylongworth/",
+  //     },
+  //     {
+  //       icon: <Instagram />,
+  //       url: "https://www.instagram.com/glutenfreegalwaygirl",
+  //     },
+  //   ],
+  // },
 ];
+
 const AboutMe = ({ isTabActive }) => {
   useEffect(() => {
     AOS.init();
@@ -72,14 +66,12 @@ const AboutMe = ({ isTabActive }) => {
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                I am currently working in a startup in Ireland. I love working in a fast pace environment, creating, building things and working with others.
+                I'm a highly skilled and creative individual, happiest when I am dreaming of new ideas and bringing them to life on the web.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
-                  {contactInfo.map(({ id, contact, socalContact, system }) => {
+                 {contactInfo.map(({ id, contact, socalContact, system }) => {
                     return (
                       <div
                         key={id}
@@ -88,15 +80,15 @@ const AboutMe = ({ isTabActive }) => {
                       >
                         <div className="abox">
                           <div className="about__contbox__item">
-                            <span className="ptext fz-18 mb-20 d-block">
-                              {system}
-                            </span>
-                            <Link to={""}>{contact}</Link>
-                            {socalContact && (
+                            <span className="ptext fz-18 mb-20 d-block">{system}</span>
+                            {contact && <a href={`mailto:${contact}`}>{contact}</a>}
+                            {Array.isArray(socalContact) && (
                               <ul className="d-flex align-items-center gap-2 gap-xl-4">
-                                {socalContact.map((info, index) => (
+                                {socalContact.map(({ icon, url }, index) => (
                                   <li key={index}>
-                                    <Link to={""}>{info} </Link>
+                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                      {icon}
+                                    </a>
                                   </li>
                                 ))}
                               </ul>
@@ -106,6 +98,7 @@ const AboutMe = ({ isTabActive }) => {
                       </div>
                     );
                   })}
+
                 </div>
               </div>
             </div>

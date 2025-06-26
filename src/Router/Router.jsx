@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import AllServices from "../Pages/AllServices";
 import ServiceDetails from "../Pages/ServiceDetails";
 import Contact from "../Pages/Contact/Contact";
+import Footer from "../Components/Shared/Footer/Footer";
 import AllBlogs from "../Pages/AllBlogs/AllBlogs";
 import BlogDetails from "../Pages/BlogDetails/BlogDetails";
 import Portfolio from "../Pages/Portfolio/Portfolio";
@@ -14,6 +15,7 @@ import GfggDetails from "../Pages/PortfolioDetails/GfggDetails";
 import TpDetails from "../Pages/PortfolioDetails/TpDetails";
 import PprDetails from "../Pages/PortfolioDetails/PprDetails";
 import DandWDetails from "../Pages/PortfolioDetails/DandWDetails";
+import GfretreatsDetails from "../Pages/PortfolioDetails/GfretreatsDetails";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +47,10 @@ export const router = createBrowserRouter([
         element: <Contact />,
       },
       {
+        path: "/footer",
+        element: <Footer />,
+      },
+      {
         path: "/portfolio",
         element: <Portfolio />,
       },
@@ -71,6 +77,10 @@ export const router = createBrowserRouter([
       {
         path: "/dandw-details",
         element: <DandWDetails />,
+      },
+      {
+        path: "/gfretreats-details",
+        element: <GfretreatsDetails />,
       },
     ],
   },

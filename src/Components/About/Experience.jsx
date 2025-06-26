@@ -15,31 +15,28 @@ const Experience = ({isTabActive}) => {
             <div className="about__onecontent">
               <h2>My Experience</h2>
               <p>
-                Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                consectetur, aliquam quaerats voluptatem. Ut enim ad minima
-                veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem
-                velit esse quam nihil
+                
               </p>
               <div className="exprience__box mt-30">
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2011</span>
-                  <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Software Engineer</h4>
-                    <p className="fz-18 pra d-block">UI Head & Manager</p>
+                  <span className="fz-18 fw-500 base">Jan 2024 - Present</span>
+                  <div className="expri__cont tx-right">
+                    <h4 className="mb-15 text-white">Project Manager</h4>
+                    <p className="fz-18 pra d-block">UI UX App Design, Web Development </p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2016</span>
-                  <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Product Designer</h4>
-                    <p className="fz-18 pra d-block">Head of Department</p>
+                  <span className="fz-18 fw-500 base">Oct 2016 - Jan 2024</span>
+                  <div className="expri__cont tx-right">
+                    <h4 className="mb-15 text-white">Shopify Developer</h4>
+                    <p className="fz-18 pra d-block">Customer support to Dev Manager</p>
                   </div>
                 </div>
                 <div className="exri__item">
-                  <span className="fz-18 fw-500 base">In 2023</span>
-                  <div className="expri__cont">
-                    <h4 className="mb-15 text-white">Senior UI Designer</h4>
-                    <p className="fz-18 pra d-block">Fiverr.com</p>
+                  <span className="fz-18 fw-500 base">Nov 2014 - Sep 2016</span>
+                  <div className="expri__cont tx-right">
+                    <h4 className="mb-15 text-white">Web Developer & Digital Designer</h4>
+                    <p className="fz-18 pra d-block">iSupply Printing Galway</p>
                   </div>
                 </div>
               </div>

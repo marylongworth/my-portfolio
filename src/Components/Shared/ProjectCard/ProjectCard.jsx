@@ -9,6 +9,7 @@ const ProjectCard = ({
   index,
   openLightbox,
   navigate,
+  slug,
 }) => {
   return (
     <div
@@ -16,19 +17,19 @@ const ProjectCard = ({
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div onClick={() => openLightbox(index)} className="thumb mb-30 imgc">
+       <Link to={`/${slug}`} className="thumb mb-30 imgc">
         <img src={image} alt="img" />
-      </div>
+      </Link>
       <div className="content d-flex align-items-center justify-content-between gap-2">
-        <Link to={navigate} className="left__cont">
+        <Link to={`/${slug}`} className="project__link">
           <span className="base mb-2 mb-xxl-3 d-block text-uppercase">
             {heading}
           </span>
           <h3>{subHeading}</h3>
         </Link>
-        <div onClick={() => openLightbox(index)} className="common__icon imgc">
+        <Link to={`/${slug}`} className="common__icon imgc">
           <ArrowUpRight className="icon" />
-        </div>
+        </Link>
       </div>
     </div>
   );

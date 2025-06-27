@@ -4,7 +4,7 @@ export const socialIcons = [
   {
     id: 1,
     icon: <Instagram />,
-    url: "https://www.instagram.com/glutenfreegalwaygirl/", 
+    url: "https://www.instagram.com/minimaz_com/", 
   },
   {
     id: 3,

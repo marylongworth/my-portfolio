@@ -25,7 +25,7 @@ const socalIcon = [
   {
     id: 5,
     icon: <Instagram />,
-    link: "https://www.instagram.com/glutenfreegalwaygirl/",
+    link: "https://www.instagram.com/minimaz_com/",
   },
 ];
 

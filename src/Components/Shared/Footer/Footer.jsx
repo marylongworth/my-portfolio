@@ -13,7 +13,7 @@ const socalList = [
     id: 2,
     platfrom: "Instagram",
     icon: <ArrowRight />,
-    link: "https://www.instagram.com/glutenfreegalwaygirl/",
+    link: "https://www.instagram.com/minimaz_com/",
   },
   /* {
     id: 3,

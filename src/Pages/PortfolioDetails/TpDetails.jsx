@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { imagesList, projectList } from "../../Utlits/projectList";
 import PageHeader from "../../Components/Shared/PageHeader/PageHeader";
 import detailbg from "../../assets/img/portfolio/port-detailsbig-tp.png";
-import detailbg1 from "../../assets/img/portfolio/port-detials2.png";
-import detailbg2 from "../../assets/img/portfolio/port-detials2.png";
+import detailbg1 from "../../assets/img/portfolio/port-tp1.png";
+import detailbg2 from "../../assets/img/portfolio/port-tp2.png";
 import ProjectCard from "../../Components/Shared/ProjectCard/ProjectCard";
 import Lightbox from "../../Components/Shared/LightBox/LightBox";
 import { socialIcons } from "../../Utlits/socilIcons";
@@ -108,7 +108,9 @@ const TpDetails = () => {
             >
               <h3 className="text__boxhead">Brief</h3>
               <p className="fz-16 pra ttext__one">
-                My client needed a website to sell new HR tech software
+                My client needed a website to sell new HR product. Talent Prospecting helps companies create a positive culture, 
+                spotlight future leaders & retain their top talent. The project involved end-to-end design, branding refinement, 
+                and the setup of lead capture systems to support growth.
               </p>
               <p className="fz-16 pra">
                 ..
@@ -121,7 +123,13 @@ const TpDetails = () => {
             >
               <h3 className="text__boxhead">Challenge</h3>
               <p className="fz-16 pra ttext__one">
-              Build a webiste for a client who offers consulting on identifying and retaining top staff in their organisations.
+              The main challenge was positioning the site in a highly competitive 
+              recruitment and staffing space while maintaining clarity and trustworthiness.
+              Since Talent Prospecting is a new and unfamiliar product, one of the biggest challenges was 
+              clearly communicating what it does and why it matters, especially to busy decision makers like CEOs.
+              Without a well known brand or existing user base, the site needed to quickly explain the value proposition 
+              in a way that felt credible, simple, and actionable. 
+              The messaging had to avoid jargon and make it immediately obvious why someone should book a call.
               </p>
               <ul className="challenge__list">
                 <li>
@@ -139,20 +147,12 @@ const TpDetails = () => {
             >
               <h3 className="text__boxhead">Solution & Result</h3>
               <p className="fz-16 pra">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet. It uses a
-                dictionary of over Latin words, combined with a handful of model
-                sentence structures, to generate Lorem Ipsum which looks
-                reasonable. The generated Lorem Ipsum is therefore always free
-                from repetition, injected humour, or non-characteristic words
-                etc.
+                 I created a short, high-impact explainer video using Adobe Premiere Pro that walks users through the platform's purpose and benefits in under a minute. 
+                 Placing this video prominently on the homepage helped reduce friction, increase clarity, and give visitors a quick visual understanding 
+                 of how the product works. Combined with streamlined copy and clear CTAs, the video became a central tool for building trust and driving call bookings.
               </p>
+              <p> In addition, I helped define and structure case studies that highlight real world results and client success stories. These case studies serve to build credibility 
+                with skeptical or time constrained decision-makers, reinforcing trust and making it easier for them to feel confident about booking a call.</p>
             </div>
             <div
               className="details__small"

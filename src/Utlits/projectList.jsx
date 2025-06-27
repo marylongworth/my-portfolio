@@ -13,7 +13,7 @@ export const projectList = [
     image: pro1,
     heading: "Product Design",
     subHeading: "Positive Peer Recognition",
-    category: ["app_design", "website_design", "all"]
+    category: ["app_design", "website_design", "ux_ui", "all"]
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ export const projectList = [
     image: pro2,
     heading: "App Design",
     subHeading: "GluGo",
-    category: ["react_development", "app_design", "all"]
+    category: ["react_development", "app_design", "ux_ui", "all"]
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ export const projectList = [
     image: pro6,
     heading: "Website Design",
     subHeading: "Gluten Free Escapes",
-    category: ["ecommerce", "website_design", "all"]
+    category: ["ecommerce", "website_design", "branding_design", "all"]
   }
 ];
 

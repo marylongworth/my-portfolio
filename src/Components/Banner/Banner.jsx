@@ -90,7 +90,7 @@ const Banner = () => {
       </div>
       <div className="banner__leftinfo">
         <div className="left__infomobile">
-          <div>marylongworth100@gmail.com</div>
+          <div style={{ textTransform: "lowercase" }} >marylongworth100@gmail.com</div>
            {/* 
           <Link to={""}>
             <img src={dial} alt="img" />

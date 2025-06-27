@@ -89,29 +89,6 @@ const GfggDetails = () => {
                 ))}
               </div>
 
-              <div className="port__itembox">
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Clients</h5>
-                    <p>Personal Project</p>
-                  </div>
-                  <div className="items">
-                    <h5>Date</h5>
-                    <p>May 2020 - Present</p>
-                  </div>
-                </div>
-                <div className="port__left">
-                  <div className="items mb__cus30">
-                    <h5>Category</h5>
-                    <p>Web & Product Design</p>
-                  </div>
-                  <div className="items">
-                    <h5>Location</h5>
-                    <p>Galway, Ireland</p>
-                  </div>
-                </div>
-              </div>
-
               <ul className="social d-flex gap-3">
                 {socialIcons.map(({ icon, id }) => (
                   <li key={id}>

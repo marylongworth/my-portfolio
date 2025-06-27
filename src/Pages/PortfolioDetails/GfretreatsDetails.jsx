@@ -109,8 +109,8 @@ const GfretreatsDetails = () => {
               <p className="fz-16 pra ttext__one">
               Gluten Free Retreats is a personal passion project aimed at creating a safe and rejuvenating travel experience for 
               individuals with gluten sensitivities. The goal was to design a website that not only introduced the concept of 
-              gluten-free wellness retreats but also began building a community of like-minded travelers. I took on the 
-              full scope of the project—from branding and visual identity to website design and functional development 
+              gluten free wellness retreats but also began building a community of like minded travelers. I took on the 
+              full scope of the project, from branding and visual identity to website design and functional development 
               on the Shopify platform.
               </p>
             </div>

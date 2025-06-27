@@ -107,8 +107,9 @@ const PprDetails = () => {
             >
               <h3 className="text__boxhead">Brief</h3>
               <p className="fz-16 pra ttext__one">
-              Design and launch a digital platform that enables employees to recognize and celebrate each other’s contributions in a positive, public, and structured way. 
-              The goal was to foster a culture of appreciation and boost morale within teams by making peer recognition easy, engaging, and consistent.
+              Design and launch a web app that enables employees to recognize and celebrate each other’s contributions.
+              The goal was to foster a culture of appreciation and boost morale within teams by making peer 
+              recognition easy, engaging, and consistent. This app can highlight future leaders and help with successon planning for companies.
               </p>
             </div>
             <div
@@ -129,6 +130,9 @@ const PprDetails = () => {
                 <li>
                   Easy for management to set up the teams
                 </li>
+                  <li>
+                  Data analytics are distalyed in an easy to understand way.
+                </li>
               </ul>
             </div>
             <div
@@ -138,8 +142,9 @@ const PprDetails = () => {
             >
               <h3 className="text__boxhead">Solution & Result</h3>
               <p className="fz-16 pra">
-              User-Centered Design Approach: Created low- to high-fidelity wireframes and interactive prototypes. 
-              Prioritized ease of use with a simple, mobile-friendly interface.
+              User-Centered Design Approach: Created low to high fidelity wireframes and interactive prototypes. 
+              Prioritized ease of use with a simple, user friendly interface. Mobile optimised for the ocassional 
+              employee that may need to use a mobile instead of the desktop.
               Designed microinteractions and subtle animations to make the experience feel rewarding.
               </p>
             </div>

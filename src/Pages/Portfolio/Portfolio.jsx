@@ -25,13 +25,23 @@ const categoryList = [
   },
   {
     id: 4,
-    categoryName: "Ecommerce",
-    value: "ecommerce",
+    categoryName: "Web Design",
+    value: "website_design",
   },
   {
     id: 5,
+    categoryName: "UX UI",
+    value: "ux_ui",
+  },
+  {
+    id: 7,
     categoryName: "Web Design",
     value: "website_design",
+  },
+  {
+    id: 8,
+    categoryName: "Video",
+    value: "video_production",
   },
 ];
 const Portfolio = () => {

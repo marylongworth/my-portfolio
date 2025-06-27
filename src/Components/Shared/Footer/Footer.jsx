@@ -43,7 +43,7 @@ const Footer = () => {
                   Hello, I’m Mary, Website & UX Designer
                   based in Ireland.
                 </p>
-                <a href="mailto:marylongworth100@gmail.com">marylongworth100@gmail.com</a>
+                <a style={{ color: "#FFA4FF", textTransform: "lowercase" }}  href="mailto:marylongworth100@gmail.com">marylongworth100@gmail.com</a>
               </div>
             </div>
             <div className="col-lg-6">
@@ -78,10 +78,10 @@ const Footer = () => {
             </p>
             <ul className="terms">
               <li>
-                <a href="#0"> Terms & Condition </a>
+                <a href="#0"> </a>
               </li>
               <li>
-                <a href="#0"> Privacy Policy </a>
+                <a href="#0"> </a>
               </li>
             </ul>
             <a href="#about" className="toparrow">

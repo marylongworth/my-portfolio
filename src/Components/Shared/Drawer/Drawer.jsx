@@ -34,7 +34,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
           <div className="sub__contac-item">
             <div className="content">
               <span className="address d-block"> email </span>
-              <Link className="textp"> hi@marylongworth.com </Link>
+              <Link style={{ color: "#FFA4FF", textTransform: "lowercase" }} className="textp"> marylongworth100@gmail.com </Link>
             </div>
           </div>
           <div className="sub__contac-item">
@@ -46,11 +46,11 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         </div>
         <div className="sub__contact-right mb-80 position-relative">
           <ul className="social d-flex gap-3">
-            {socialIcons.map(({ icon, id }) => (
+            {socialIcons.map(({ icon, id, url }) => (
               <li key={id}>
-                <Link>
-                  <i>{icon}</i>
-                </Link>
+                <a key={id} href={url} target="_blank" rel="noopener noreferrer">
+                {icon}
+              </a>
               </li>
             ))}
           </ul>

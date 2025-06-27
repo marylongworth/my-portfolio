@@ -1,20 +1,14 @@
-import { Facebook, Twitter, Linkedin, Youtube } from "react-bootstrap-icons";
+import { Instagram, Linkedin } from "react-bootstrap-icons";
 
 export const socialIcons = [
   {
     id: 1,
-    icon: <Facebook />,
-  },
-  {
-    id: 2,
-    icon: <Twitter />,
+    icon: <Instagram />,
+    url: "https://www.instagram.com/glutenfreegalwaygirl/", 
   },
   {
     id: 3,
     icon: <Linkedin />,
-  },
-  {
-    id: 4,
-    icon: <Youtube />,
+    url: "https://www.linkedin.com/in/marylongworth/", 
   },
 ];

@@ -5,8 +5,12 @@ import { Outlet, useLocation, useNavigate, useParams } from "react-router-dom";
 import Banner from "../Components/Banner/Banner";
 import ScrollToTop from "../Components/ScrollToTop";
 
+console.log("Root layout rendered");
+
 const Root = () => {
   const location = useLocation();
+
+  console.log("Root layout rendered");
 
   return (
     <>
@@ -27,3 +31,5 @@ const Root = () => {
 };
 
 export default Root;
+
+

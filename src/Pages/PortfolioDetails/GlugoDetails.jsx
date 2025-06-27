@@ -242,7 +242,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
         </div>
       </section>
 
-      <section className="portfolidetails__section cmn__bg pt-120 pb-120">
+     {/*  <section className="portfolidetails__section cmn__bg pt-120 pb-120">
         <div className="container">
           <div className="project__head text-center">
             <span
@@ -280,7 +280,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
             currentId={currentId}
           />
         )}
-      </section>
+      </section> */}
     </>
   );
 };

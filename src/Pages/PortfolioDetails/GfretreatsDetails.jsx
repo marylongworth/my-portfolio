@@ -161,7 +161,7 @@ const GfretreatsDetails = () => {
         </div>
       </section>
 
-      <section className="portfolidetails__section cmn__bg pt-120 pb-120">
+      {/* <section className="portfolidetails__section cmn__bg pt-120 pb-120">
         <div className="container">
           <div className="project__head text-center">
             <span
@@ -199,7 +199,7 @@ const GfretreatsDetails = () => {
             currentId={currentId}
           />
         )}
-      </section>
+      </section> */}
     </>
   );
 };

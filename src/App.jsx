@@ -7,11 +7,14 @@ import "aos/dist/aos.css";
 
 const App = () => {
   useEffect(() => {
+    console.log("AOS init"); // ✅ Confirm AOS is initializing
     AOS.init();
   }, []);
+
+  console.log("Rendering <App />"); // ✅ Confirm App is rendering
+
   return (
     <>
-      
       <RouterProvider router={router} />
     </>
   );

@@ -14,6 +14,8 @@ import MarqueeWapper from "../Components/Shared/Marquee/MarqueeWapper";
 import Preloader from "../Components/Shared/Preloader/Preloader";
 //import Footer from "../Components/Shared/Footer/Footer";
 
+console.log("Home page rendered");
+
 
 const Home = () => {
   const [isFetching, setIsFetching] = useState(true);

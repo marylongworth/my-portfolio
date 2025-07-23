@@ -108,7 +108,7 @@ const GfggDetails = () => {
             >
               <h3 className="text__boxhead">The Brief</h3>
               <p className="fz-16 pra ttext__one">
-                This project came about from a dream, I woke up dreaming about the cookie monester eating gluten free cookies.
+                This project came about from a dream, I woke up dreaming about the cookie monster eating gluten free cookies.
                 It was the start of the covid lockdown, with extra time on my hands, I started designing gluten free t-shirts and pins.
                 I built this site and started an Instagram account. 
               </p>
@@ -126,16 +126,6 @@ const GfggDetails = () => {
               data-aos-duration="1600"
             >
               <h3 className="text__boxhead">Challenge</h3>
-              <p className="fz-16 pra ttext__one">
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look even
-                slightly believable. If you are going to use a passage of Lorem
-                Ipsum, you need to be sure there isn't anything embarrassing
-                hidden in the middle of text. All the Lorem Ipsum generators on
-                the Internet tend to repeat predefined chunks as necessary,
-                making this the first true generator on the Internet.
-              </p>
               <ul className="challenge__list">
                 <li>
                 Many food blogs are slow to load and a there is a lot of text on recipe pages. 

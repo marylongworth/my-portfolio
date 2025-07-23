@@ -22,7 +22,7 @@ const Drawer = ({ isSidebarActive, setIsSidebarActive }) => {
         <p>
           I am currently working in a startup in Ireland. I love working in a fast pace environment, creating, building things and working with others.
           I'm a highly skilled and creative individual, happiest when I am dreaming of new ideas and bringing them to life on the web.
-          I'm a native English speaker, learning Spainish also. Hoping to move to Spain one day.
+          I'm a native English speaker, learning Spainish also. 
         </p>
         <div className="sub__contact-left d-grid">
           <div className="sub__contac-item">

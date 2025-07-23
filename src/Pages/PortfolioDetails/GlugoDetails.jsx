@@ -9,6 +9,12 @@ import detailbg2 from "../../assets/img/portfolio/glugo2.png";
 import ProjectCard from "../../Components/Shared/ProjectCard/ProjectCard";
 import Lightbox from "../../Components/Shared/LightBox/LightBox";
 import { socialIcons } from "../../Utlits/socilIcons";
+import designProcessImg from "../../assets/img/glugo/my-design-process.jpeg"; 
+import defineProbImg from "../../assets/img/glugo/define-the-problem.jpeg"; 
+import wireframeImg from "../../assets/img/glugo/wireframes-lo-fi.jpeg"; 
+import userflowImg from "../../assets/img/glugo/user-flow.jpeg"; 
+import styleguideImg from "../../assets/img/glugo/style-guide.jpg"; 
+
 
 const GlugoDetails = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
@@ -105,29 +111,40 @@ const GlugoDetails = () => {
               data-aos="fade-up"
               data-aos-duration="1600"
             >
-               <h3 className="text__boxhead">The Brief</h3>
+               <h3 className="text__boxhead">Intro</h3>
+
+                <p className="fz-16 pra ttext__one"> I designed and coded Gluten Free finder app using React, TypeScript, 
+                  and custom Figma design system.
+</p>
+              
               <p className="fz-16 pra ttext__one">
-              Design an app that will be the trip advisor of gluten free eating and travel. 
-              This app will be the ultimate travel companion for people living a gluten free life. 
+      
+              I wanted to build an app that will be the trip advisor of gluten free eating and travel. 
+              This app would be the ultimate travel companion for people living a gluten free life. 
               It will help people find restaurants nearby that they can eat safely in.
               </p>
-              <p className="fz-16 pra">
-              Problem research & analysis
-              </p>
-              <p className="fz-16 pra">
-              Is this is something others are also having problems with? 
-              </p>
-              <p className="fz-16 pra">
-              Researched other apps, read app reviews, sent out a survey to the gluten free community
-              </p>
+              
             </div>
+
+           <img src={designProcessImg} className="details__medium" alt="img" />
+
+
+<h3 className="text__boxhead">Define The Problem</h3>
+
+<img src={defineProbImg} className="details__medium" alt="img" />
+
+<h3 className="text__boxhead">Problem research & analysis</h3>
+ <p className="fz-16 pra ttext__one">
+             Is this is something others are also having problems with? 
+             Researched other apps, read app reviews, sent out a survey to the gluten free community  </p>
+
 
             <div
               className="text__box mb__cus60"
               data-aos="fade-up"
               data-aos-duration="1600"
             >
-               <h3 className="text__boxhead">Challenge</h3>
+               <h3 className="text__boxhead">Key Findings</h3>
               <p className="fz-16 pra ttext__one">
               At a basic level I wanted to find out if people with gluten intolerances eat out regularly. From the survey I found that 5% eat out 2 or more times per week, 30% eat out once a week, 44% eat out once a month, 14% once every 6 months.
 After this I asked them if they were guaranteed that a restaurant was Coeliac safe, would they eat out more often and the response was almost all a ‘yes’.
@@ -138,6 +155,8 @@ The app depends on having active users, if there are no reviews in any of the re
 From the survey it was clear many people are wary of travel since being diagnosed
 There are often limited choices for gluten free when eating out. Also a big problem is lack of knowledge and awareness of restaurant staff of Coeliac and gluten intolerance
               </p><br></br>
+               
+               <br></br>
               <p className="fz-16 pra">
               Key findings from research of other apps and their reviews:
               </p>
@@ -193,6 +212,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
               ways a user can accomplish a task, define the actions they will need to move through 
               the app and spot any underlying issues such as where they might get stuck.
               </p>
+              <img src={userflowImg} className="details__medium" alt="img" />
             </div>
 
 
@@ -201,7 +221,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
               data-aos="fade-up"
               data-aos-duration="1600"
             >
-               <h3 className="text__boxhead">Wirefame</h3>
+               <h3 className="text__boxhead">Wireframe</h3>
               <p className="fz-16 pra ttext__one">
               They are great for figuring out where elements are going to appear on the pages - no need for styles or colors or images.
                These are meant to simple so you can easily map out each page and how the elements will function.
@@ -209,6 +229,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
               <p className="fz-16 pra">
               The use of this wireframe meant I could quickly map out all the screens and easily make changes where necessary.
               </p>
+               <img src={wireframeImg} className="details__medium" alt="img" />
             </div>
 
 
@@ -222,7 +243,7 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
               <p className="fz-16 pra ttext__one">
               Before starting the build, it’s important to create the UI style guide. This really helps communicate 
               and collaborate better with the developers and create consistency throughout the app. </p>
-              
+              <img src={styleguideImg} className="details__medium" alt="img" />
             </div>
 
 
@@ -241,46 +262,6 @@ Should only be for celiac/gluten sensitive people - There will be a filter optio
           </div>
         </div>
       </section>
-
-     {/*  <section className="portfolidetails__section cmn__bg pt-120 pb-120">
-        <div className="container">
-          <div className="project__head text-center">
-            <span
-              className="common__sub"
-              data-aos="fade-down"
-              data-aos-duration="1000"
-            >
-              Portfolio
-            </span>
-            <h2 className="fw-500" data-aos="fade-up" data-aos-duration="1000">
-              Related Work
-            </h2>
-          </div>
-
-          <div className=" project__wrapone">
-            {projectList
-              .slice(0, 2)
-              .map(({ heading, id, image, subHeading, slug }, index) => (
-                <ProjectCard
-                  key={id}
-                  image={image}
-                  heading={heading}
-                  subHeading={subHeading}
-                  openLightbox={openLightbox}
-                  index={index}
-                   slug={slug} 
-                />
-              ))}
-          </div>
-        </div>
-        {lightboxOpen && (
-          <Lightbox
-            images={imagesList}
-            onClose={closeLightbox}
-            currentId={currentId}
-          />
-        )}
-      </section> */}
     </>
   );
 };

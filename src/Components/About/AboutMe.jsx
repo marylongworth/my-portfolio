@@ -66,8 +66,10 @@ const AboutMe = ({ isTabActive }) => {
                 data-aos="fade-up"
                 data-aos-duration="500"
               >
-                I am currently working in a startup in Ireland. I love working in a fast pace environment, creating, building things and working with others.
-                I'm a highly skilled and creative individual, happiest when I am dreaming of new ideas and bringing them to life on the web.
+                I am currently working in a startup in Ireland. I love working in a fast pace environment, 
+                creating, building intuitive interfaces that users will love.
+                I'm a highly skilled and creative individual, happiest when I am dreaming of new ideas 
+                and bringing them to life on the web.
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">

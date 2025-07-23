@@ -7,7 +7,7 @@ const Preloader = () => {
         <div className="mary mb-10">
           <img src={manimg} alt="img" />
         </div>
-        <span className="fz-30 mati fw-600 text-uppercase">Mary</span>
+        <span className="fz-30 mati fw-600 text-uppercase">HELLO</span>
       </div>
     </div>
   );

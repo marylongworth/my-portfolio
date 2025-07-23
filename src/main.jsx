@@ -5,8 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./scss/app.scss";
 
-console.log("Starting React app..."); // ✅ Confirm React entry is loading
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />

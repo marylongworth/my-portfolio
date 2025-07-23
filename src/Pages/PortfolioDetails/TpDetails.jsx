@@ -113,7 +113,7 @@ const TpDetails = () => {
                 and the setup of lead capture systems to support growth.
               </p>
               <p className="fz-16 pra">
-                ..
+                
               </p>
             </div>
             <div

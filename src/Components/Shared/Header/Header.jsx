@@ -138,7 +138,7 @@ const Header = () => {
           </ul>
           <div className="menu__components d-flex align-items-center">
             <Link
-              to="/#footer"
+              to="mailto:marylongworth100@gmail.com"
               className="d-flex fw-500 cmn--btn align-items-center gap-2"
             >
               <span className="get__text">Let's Talk</span>

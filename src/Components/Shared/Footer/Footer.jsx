@@ -40,8 +40,7 @@ const Footer = () => {
             <div className="col-lg-6">
               <div className="get__content">
                 <p>
-                  Hello, I’m Mary, Website & UX Designer
-                  based in Ireland.
+                  Hi, I’m Mary, Web UX UI Designer & Developer 👋
                 </p>
                 <a style={{ color: "#FFA4FF", textTransform: "lowercase" }}  href="mailto:marylongworth100@gmail.com">marylongworth100@gmail.com</a>
               </div>

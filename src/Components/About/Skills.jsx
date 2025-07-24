@@ -45,7 +45,10 @@ const Skills = ({ isTabActive }) => {
             <div className="about__onecontent">
               <h2>My Skills</h2>
               <p>
-                React • HTML • CSS • Liquid • JavaScript • Figma • Wordpress • Digital Marketing • Adobe Illustrator • Photoshop • Premier Pro • InDesign • Social Media Marketing • Project Management • ChatGPT • SEO • Swagger.io
+                React • Next.js • TypeScript • Bootstrap •  Tailwind CSS • NextUI 
+                • Figma • UX • UI • Design Systems • HTML • CSS • JavaScript 
+                • Git • Liquid • Project Management • Adobe Illustrator • e-commerce
+                • ChatGPT • SEO • Swagger.io
               </p>
               <div className="about__contactwrap">
                 <div className="row g-4">
@@ -54,7 +57,7 @@ const Skills = ({ isTabActive }) => {
                       <div key={id} className="col-xxl-6 col-xl-6 col-lg-12 col-md-6">
                         <div className="abox myskill__item">
                           <div className="thumb">
-                            <img src={image} alt="img" />
+                           {/*  <img src={image} alt="img" /> */}
                           </div>
                           <div className="mys">
                             <span className="ptext fz-18 mb-15 d-block">{skill}</span>

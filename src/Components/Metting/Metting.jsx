@@ -47,7 +47,7 @@ const Metting = () => {
                 </span>
                 <span className="box">
                   <span className="ptext fz-18 mb-1 d-block"> Location </span>
-                  <a href="#0"> Galway, Ireland </a>
+                  <p>Spain</p>
                 </span>
               </div>
             </div>

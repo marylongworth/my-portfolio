@@ -83,11 +83,11 @@ const Footer = () => {
                 <a href="#0"> </a>
               </li>
             </ul>
-            <a href="#about" className="toparrow">
+            {/* <a href="/#/#about" className="toparrow">
               <i>
                 <ArrowUpShort />
               </i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

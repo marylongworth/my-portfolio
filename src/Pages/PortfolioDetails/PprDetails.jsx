@@ -44,6 +44,7 @@ const PprDetails = () => {
   if (!unlocked) {
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white px-4 pt-120 pb-60">
+      <h2 className="text__boxhead pb-60">Positive Peer Recognition App</h2>
       <div className="max-w-md w-full bg-[#2b2b2b] p-8 rounded-2xl shadow-lg border border-gray-700 ">
         <h2 className="text-3xl font-bold mb-6 pt-60 pb-60">🔐 Protected Page</h2>
         <form onSubmit={handlePasswordSubmit} className="pb-60">

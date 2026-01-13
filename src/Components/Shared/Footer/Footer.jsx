@@ -69,7 +69,7 @@ const Footer = () => {
         <div className="container">
           <div className="copyright">
             <p className="white">
-              Copyright © 2025 {" "}
+              Copyright © 2026 {" "}
               <Link to={"/"} className="base">
                 Mary Longworth.
               </Link>{" "}

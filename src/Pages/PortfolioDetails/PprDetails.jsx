@@ -16,7 +16,7 @@ const PASSWORD = "maz";
 const LOCALSTORAGE_KEY = "pprUnlocked";
 
 const PprDetails = () => {
-  const [unlocked, setUnlocked] = useState(false);
+  const [unlocked, setUnlocked] = useState(true);
   const [passwordInput, setPasswordInput] = useState("");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentId, setCurrentId] = useState(0);

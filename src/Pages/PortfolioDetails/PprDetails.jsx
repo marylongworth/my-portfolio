@@ -12,63 +12,9 @@ import { socialIcons } from "../../Utlits/socilIcons";
 import loadingGif from "../../assets/img/microinteractions.gif"; 
 import wirefreamesGif from "../../assets/img/figma-wireframes.gif"; 
 
-const PASSWORD = "maz";
-const LOCALSTORAGE_KEY = "pprUnlocked";
-
 const PprDetails = () => {
-  const [unlocked, setUnlocked] = useState(true);
-  const [passwordInput, setPasswordInput] = useState("");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentId, setCurrentId] = useState(0);
-
-  // Check if previously unlocked
-  useEffect(() => {
-    const stored = localStorage.getItem(LOCALSTORAGE_KEY);
-    if (stored === "true") {
-      setUnlocked(true);
-    }
-  }, []);
-
-  // Handle password submit
-  const handlePasswordSubmit = (e) => {
-    e.preventDefault();
-    if (passwordInput === PASSWORD) {
-      localStorage.setItem(LOCALSTORAGE_KEY, "true");
-      setUnlocked(true);
-    } else {
-      alert("Incorrect password (Check my CV :)");
-    }
-  };
-
-  // password lock screen 
-  if (!unlocked) {
-  return (
-    <div className="min-h-screen bg-[#1e1e1e] text-white px-4 pt-120 pb-60">
-      <h2 className="text__boxhead pb-60">Positive Peer Recognition App</h2>
-      <div className="max-w-md w-full bg-[#2b2b2b] p-8 rounded-2xl shadow-lg border border-gray-700 ">
-        <h2 className="text-3xl font-bold mb-6 pt-60 pb-60">🔐 Protected Page</h2>
-        <form onSubmit={handlePasswordSubmit} className="pb-60">
-          <input
-            type="password"
-            value={passwordInput}
-            placeholder="Enter password"
-            onChange={(e) => setPasswordInput(e.target.value)}
-            style={{ backgroundColor: "#fff", padding: "1.5rem", color: "black" }}
-            className=""
-          />
-          <button
-            type="submit"
-            style={{ backgroundColor: "#ffa4ff", padding: "1.5rem", color: "black" }}
-            className=""
-          >
-            Unlock
-          </button>
-        </form>
-      </div>
-    </div>
-  );
-}
-
 
   // The rest of your original page
   const openLightbox = (index) => {
